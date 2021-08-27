@@ -26,7 +26,7 @@ function Banner(props) {
         style={{ transform: `translateY(${offsetY * 0.5}px)` }}
       >
         <Image
-          src="/banner.jpg"
+          src="https://images.unsplash.com/photo-1483190656465-2c49e54d29f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
           layout="fill"
           objectFit="cover"
         />
@@ -84,9 +84,11 @@ function Banner(props) {
                 <h3 className="text-4xl font-semibold mb-3 w-64 ">
                   Want to go on an adventure?
                 </h3>
+
                 <p className="-ml-5 ">Go on now. be spontaneous!</p>
+                <h3 className="text-sm text-gray-500 font-bold">Wishes from founder Rokas with ❤️</h3>
                 <button className="text-sm text-white hover:bg-red-400 shadow-sm hover:shadow-md transform transition-all duration-300 shadow-xl -ml-8 bg-gray-900 px-4 py-2 rounded-lg mt-5">
-                  Take me to nirvana baby!
+                  Take me to Mars baby!
                 </button>
               </motion.div>
             </motion.div>
