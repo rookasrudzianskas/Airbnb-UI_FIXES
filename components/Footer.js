@@ -1,49 +1,57 @@
-function Footer() {
+import React from 'react';
+
+const Footer = () => {
   return (
-    <footer className=" md:px-10 lg: py-14 bg-gray-200 text-gray-600">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-40 ml-10  lg:grid-cols-5 xl:grid-cols-5 gap-y-10 mx-auto ">
-        <div className="space-y-4 text-xs text-gray-800 w-full">
-          <h5 className="font-bold text-lg">ABOUT</h5>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">How Airbnb works</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Newsroom</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Investors</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Airbnb Plus</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Airbnb Luxe</p>
-          <div className="border-b border-gray-300 md:hidden pt-5 mr-5 "></div>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 py-14 bg-gray-100">
+        <div className="space-y-4 text-sm text-gray-800 ">
+          <h5 className="font-bold">ABOUT</h5>
+          <p className="hover:text-black duration-150 cursor-pointer">How Airbnb works</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Newsroom</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Investors</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Airbnb Plus</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Airbnb Luxe</p>
+          <p className="hover:text-black duration-150 cursor-pointer">HotelTonight</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Airbnb for Work</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Made possible by Hosts</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Careers</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Founders' Letter</p>
         </div>
-        <div className="space-y-4 text-xs text-gray-800">
-          <h5 className="font-bold text-lg">HOST</h5>
 
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Papa React</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Presents</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Investors</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Zero to Full Stack Hero</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Join Now</p>
-          <div className="border-b border-gray-300 md:hidden pt-5 mr-5 "></div>
+        <div className="space-y-4 text-sm text-gray-800">
+          <h5 className="font-bold">COMMUNITY</h5>
+          <p className="hover:text-black duration-150 cursor-pointer">Diversity & Belonging</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Against Discrimination</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Accessibility</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Airbnb Associates</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Frontline Stays</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Guest Referrals</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Gift cards</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Airbnb.org</p>
         </div>
-        <div className="space-y-4 text-xs text-gray-800">
-          <h5 className="font-bold text-lg">COMMUNITY</h5>
 
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Accessibility</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">This is not a real site</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">It's a pretty awesome clone</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Referrals accepted</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Papafam</p>
-          <div className="border-b border-gray-300 md:hidden pt-5 mr-5 "></div>
+        <div className="space-y-4 text-sm text-gray-800">
+          <h5 className="font-bold">HOST</h5>
+          <p className="hover:text-black duration-150 cursor-pointer">Host an Online Experience</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Host an Experience</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Responsible hosting</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Resource Center</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Community Center</p>
         </div>
-        <div className="space-y-4 text-xs text-gray-800">
-          <h5 className="font-bold text-lg">SUPPORT</h5>
 
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Help center</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Trust & Safety</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Say Hi Youtube</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">Easter Eggs</p>
-          <p className="hover:text-gray-400 cursor-pointer transition duration-300">For the win</p>
-          <div className="border-b border-gray-300 md:hidden pt-5 mr-5 "></div>
+        <div className="space-y-4 text-sm text-gray-800">
+          <h5 className="font-bold">SUPPORT</h5>
+          <p className="hover:text-black duration-150 cursor-pointer">Our COVID-19 Response</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Help Center</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Cancellation options</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Neighborhood Support</p>
+          <p className="hover:text-black duration-150 cursor-pointer">Trust & Safety</p>
         </div>
+
+
       </div>
-    </footer>
   );
-}
+};
 
 export default Footer;
+
+// done

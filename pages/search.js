@@ -9,6 +9,7 @@ import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
 import Map from "../components/Map";
 import wait from "waait";
+import Head from "next/head";
 
 function Search({ searchResults }) {
   const [offsetY, setOffsetY] = useState(0);
@@ -74,6 +75,21 @@ function Search({ searchResults }) {
 
   return (
     <div id="searchPage" className="h-screen">
+
+      <>
+
+        <Head>
+          <link
+              href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+              rel="stylesheet"
+          />
+          <title>Airbnb</title>
+          <meta
+              name="description"
+              content="Find holiday rentals, cabins, beach houses, unique homes and experiences around the world – all made possible by Hosts on Airbnb."
+          />
+          <link rel="icon" href="/favicon.png" />
+        </Head>
       <Header placeholder={`${location} | ${range} | ${noOfGuests}`} />
       <div
         className="relative mt-[100px]  lg:mt-[40px] h-[200px] sm:h-[300px] lg:h-[400px] xl:h-[450px] 2xl:h-[600px]"
@@ -198,7 +214,10 @@ function Search({ searchResults }) {
         </section>
       </main>
       <Footer />
+      </>
+
     </div>
+
   );
 }
 

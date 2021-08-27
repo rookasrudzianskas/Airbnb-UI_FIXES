@@ -12,6 +12,8 @@ import { css } from "@emotion/react";
 import Image from "next/image";
 
 export default function Home({ exploreData, cardsData }) {
+
+
   const [loading, setLoading] = useState(false);
 
   const override = css`
@@ -27,7 +29,23 @@ export default function Home({ exploreData, cardsData }) {
     // 3400
   }, []);
   return (
+
     <div className=" bg-gray-50">
+      <>
+
+      <Head>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Airbnb</title>
+        <meta
+            name="description"
+            content="Find holiday rentals, cabins, beach houses, unique homes and experiences around the world – all made possible by Hosts on Airbnb."
+        />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
       {loading ? (
         <div className="w-screen g h-screen bg-gray-50 flex justify-center place-items-center flex-col">
           <div className="relative -mb-10 flex flex-col justify-center place-items-center w-[250px] h-[250px]">
@@ -41,10 +59,6 @@ export default function Home({ exploreData, cardsData }) {
         </div>
       ) : (
         <div>
-          <Head>
-            <title>Create Next App</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
 
           <Header />
           <Banner />
@@ -86,6 +100,7 @@ export default function Home({ exploreData, cardsData }) {
           <Footer />
         </div>
       )}
+      </>
     </div>
   );
 }
